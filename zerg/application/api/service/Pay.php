@@ -31,7 +31,7 @@ class Pay
 
     public function pay(){
         // 检测订单
-//        $this->checkOrderValid();
+       $this->checkOrderValid();
         // 检测库存
         $orderService = new OrderService();
         $status = $orderService->checkOrderStock($this->orderID);
@@ -39,14 +39,14 @@ class Pay
             return $status;
         }
 
-        return [
-            'timeStamp' => time(),
-            'nonceStr' =>'nonceStr',
-            'package' => 'package',
-            'signType' => 'signType',
-            'paySign' => 'paySign'
-        ];
-//        return $this->makeWxPreOrder($status['orderPrice']);
+//         return [
+//             'timeStamp' => time(),
+//             'nonceStr' =>'nonceStr',
+//             'package' => 'package',
+//             'signType' => 'signType',
+//             'paySign' => 'paySign'
+//         ];
+       return $this->makeWxPreOrder($status['orderPrice']);
     }
 
     private function makeWxPreOrder($orderPrice){
