@@ -1,0 +1,5 @@
+/**index.wxss**/
+.container button{
+  width: 90%;
+  margin-bottom: 20rpx;
+}

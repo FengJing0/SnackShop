@@ -1,0 +1,9 @@
+<!--pages/theme/theme.wxml-->
+<view class="container">
+  <view class="theme-header">
+    <image src='{{themeInfo.head_img.url}}' mode="aspectFill"/>
+  </view>
+  <view class="theme-main">
+    <products productsArr='{{themeInfo.products}}' bindhandleTap='onProductsItemTap'/>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container category-container">
+  <view class="category-box">
+    <view class="left-box">
+      <block wx:for="{{categoryTypeArr}}" wx:key="{{index}}">
+        <view class="menu-item" data-index="{{index}}" bindtap='onCategoryTypeTap'>{{item.name}}</view>
+      </block>
+    </view>
+    <view class="right-box">
+      <view class="foods-type-box">
+        <categorydetail categoryInfo="{{categoryProducts}}" bindhandleTap='onProductsItemTap'/>
+      </view>
+    </view>
+  </view>
+</view>

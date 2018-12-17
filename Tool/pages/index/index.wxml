@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap='getToken' type="primary">申请令牌</button>
+  <button bindtap='order' type="primary">下单</button>
+</view>

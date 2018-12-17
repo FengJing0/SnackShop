@@ -1,0 +1,5 @@
+<!-- pages/login/login.wxml -->
+<view class='container'>
+  <text>需要您的授权才能使用哦</text>
+  <button open-type="getUserInfo" bindgetuserinfo="getuserInfo">立即授权</button>
+</view>
