@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "零食商贩",
+  "usingComponents": {
+    "products": "../../components/products/products"
+  }
+}
+
+
